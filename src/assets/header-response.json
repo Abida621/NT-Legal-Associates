@@ -1,0 +1,26 @@
+[
+    {
+        "text": "Home",
+        "routerLink": "/"
+    },
+    {
+        "text": "What We Do",
+        "routerLink": "/what-we-do"
+    },
+    {
+        "text": "Services",
+        "routerLink": "/services"
+    },
+    {
+        "text": "Litigation",
+        "routerLink": "/litigation"
+    },
+    {
+        "text": "About Us",
+        "routerLink": "/about-us"
+    },
+    {
+        "text": "Contact Us",
+        "routerLink": "/contact-us"
+    }
+]

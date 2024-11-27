@@ -1,0 +1,29 @@
+<section id="home" class="bg-cover bg-center h-screen"
+  style="background-image: url('assets/Lady_Justice.ico'); background-position: center top 30%;">
+  <div class="flex items-center justify-center h-full bg-black bg-opacity-50">
+    <div class="text-center text-white space-y-8">
+      <h2 class="text-4xl lg:text-5xl font-bold leading-tight">
+        Your One-Stop Solution for Legal & Property Services
+      </h2>
+      <p class="text-lg lg:text-xl">
+        Expert assistance in property documentation, legal services, and more.
+      </p>
+      <div class="flex flex-col items-center space-y-4">
+        <div class="flex gap-4">
+          <button (click)="onSubmit()"
+            class="bg-blue-600 px-8 py-3 text-lg font-semibold rounded-lg shadow-lg hover:bg-blue-800 transition duration-300">
+            Litigation
+          </button>
+          <button routerLink="/services"
+            class="bg-blue-600 px-8 py-3 text-lg font-semibold rounded-lg shadow-lg hover:bg-blue-800 transition duration-300">
+            Services
+          </button>
+        </div>
+        <a routerLink="/pricing"
+          class="bg-yellow-400 px-8 py-3 text-lg font-semibold rounded-lg shadow-lg hover:bg-yellow-500 transition duration-300">
+          Check Pricing
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

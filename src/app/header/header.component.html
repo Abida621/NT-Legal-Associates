@@ -1,0 +1,18 @@
+<header class="bg-gray-800 text-gray-100 shadow-md sticky top-0 z-20">
+  <div class="container mx-auto flex items-center justify-between py-4 px-6">
+    <div class="flex items-center space-x-4">
+      <img src="assets/NT_Legal_Associates.png" alt="NT Legal Logo" class="rounded-lg h-16 w-16">
+      <h1 class="text-3xl font-bold text-yellow-400">NT Legal Associates</h1>
+    </div>
+    <nav class="hidden lg:flex space-x-4">
+      <!-- <a *ngFor="let item of headerItems"  [href]="item.routerLink">{{item.text}} </a> -->
+      <a *ngFor="let item of headerItems" [href]="item.routerLink" routerLinkActive="active-link"
+        class="text-white active-router">
+        {{ item.text }}
+      </a>
+    </nav>
+    <button class="hidden lg:block bg-white text-blue-600 px-4 py-2 rounded-lg shadow hover:bg-gray-200" (click)="onSubmit()">
+      Get Started
+    </button>
+  </div>
+</header>

@@ -1,0 +1,142 @@
+<!-- Contact Us Section -->
+<section id="contact" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6 lg:px-12">
+      <!-- Section Header -->
+      <h2 class="text-4xl font-bold text-center text-blue-600 mb-8" data-aos="fade-up">Contact Us</h2>
+      <p class="text-lg text-gray-700 text-center mb-12" data-aos="fade-up" data-aos-delay="100">
+        We're here to help you with all your legal needs. Select the type of inquiry below and let us know how we can assist you.
+      </p>
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div class="bg-white p-8 shadow-lg rounded-lg" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">Send Us a Message</h3>
+          <form id="contact-form" action="https://example.com/api/contact" method="POST" class="space-y-4">
+            <!-- Inquiry Type -->
+            <div>
+              <label class="block text-gray-700">What is your inquiry about?</label>
+              <div class="mt-2">
+                <label class="mr-6">
+                  <input type="radio" id="services" name="inquiry_type" value="services" onclick="showChecklist('services')" required />
+                  Services
+                </label>
+                <label>
+                  <input type="radio" id="litigation" name="inquiry_type" value="litigation" onclick="showChecklist('litigation')" />
+                  Litigation
+                </label>
+              </div>
+            </div>
+  
+            <!-- Checklist Section -->
+            <div id="checklist-section" class="hidden mt-4">
+              <label class="block text-gray-700">Please select your specific needs:</label>
+              <div id="services-checklist" class="space-y-2 hidden">
+                <label>
+                  <input type="checkbox" id="khatha" name="specific_needs[]" value="Khatha Services" />
+                  Khatha Services
+                </label>
+                <label>
+                  <input type="checkbox" id="drafting" name="specific_needs[]" value="Drafting Document & Registration" />
+                  Drafting Document & Registration
+                </label>
+                <label>
+                  <input type="checkbox" id="property-opinion" name="specific_needs[]" value="Property Legal Opinion" />
+                  Property Legal Opinion
+                </label>
+                <label>
+                  <input type="checkbox" id="other-property" name="specific_needs[]" value="Other Property Services" />
+                  Other Property Services
+                </label>
+              </div>
+              <div id="litigation-checklist" class="space-y-2 hidden">
+                <label>
+                  <input type="checkbox" id="real-estate" name="specific_needs[]" value="Real Estate Disputes" />
+                  Real Estate Disputes
+                </label>
+                <label>
+                  <input type="checkbox" id="divorce" name="specific_needs[]" value="Divorce & Child Custody" />
+                  Divorce & Child Custody
+                </label>
+                <label>
+                  <input type="checkbox" id="labour-law" name="specific_needs[]" value="Labour Law" />
+                  Labour Law
+                </label>
+                <label>
+                  <input type="checkbox" id="personal-injury" name="specific_needs[]" value="Personal Injury" />
+                  Personal Injury
+                </label>
+                <label>
+                  <input type="checkbox" id="class-action" name="specific_needs[]" value="Class Action" />
+                  Class Action
+                </label>
+                <label>
+                  <input type="checkbox" id="ip" name="specific_needs[]" value="Intellectual Property" />
+                  Intellectual Property
+                </label>
+                <label>
+                  <input type="checkbox" id="breach-of-contract" name="specific_needs[]" value="Breach of Contract" />
+                  Breach of Contract
+                </label>
+                <label>
+                  <input type="checkbox" id="defamation" name="specific_needs[]" value="Defamation" />
+                  Defamation
+                </label>
+              </div>
+            </div>
+  
+            <!-- User Information -->
+            <div>
+              <label for="name" class="block text-gray-700">Your Name</label>
+              <input type="text" id="name" name="name" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none" required />
+            </div>
+            <div>
+              <label for="email" class="block text-gray-700">Your Email</label>
+              <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none" required />
+            </div>
+            <div>
+              <label for="phone" class="block text-gray-700">Your Phone</label>
+              <input type="tel" id="phone" name="phone" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none" />
+            </div>
+            <div>
+              <label for="message" class="block text-gray-700">Your Message</label>
+              <textarea id="message" name="message" rows="5" class="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none" required></textarea>
+            </div>
+            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-md hover:bg-blue-700 focus:outline-none">
+              Submit
+            </button>
+          </form>
+        </div>
+  
+        <!-- Contact Info & Map -->
+        <div class="space-y-8">
+          <!-- Contact Info -->
+          <div class="bg-white p-8 shadow-lg rounded-lg" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="text-2xl font-bold text-gray-800 mb-4">Contact Information</h3>
+            <ul class="text-gray-700 space-y-4">
+              <li class="flex items-center">
+                <i class="fa fa-map-marker-alt text-blue-600 text-xl mr-3"></i>
+                <span>NT Legal Associates, Sy no 137/11, Shop no 2, Balagere Gunjur Road, Balagere, Varthur, Opposite to Highlife Triflora, Bangalore, Karnataka 560087, India</span>
+              </li>
+              <li class="flex items-center">
+                <i class="fa fa-phone-alt text-blue-600 text-xl mr-3"></i>
+                <a href="tel:+919663576363" class="text-blue-600 hover:underline">+91 9663576363</a>
+              </li>
+              <li class="flex items-center">
+                <i class="fa fa-envelope text-blue-600 text-xl mr-3"></i>
+                <a href="mailto:info@ntlegalassociates.com" class="text-blue-600 hover:underline">info&#64;ntlegalassociates.com
+                </a>
+              </li>
+            </ul>
+          </div>
+  
+          <!-- Google Map -->
+          <div class="rounded-lg overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="400">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.4899294555!2d77.59456211489403!3d12.97159859085508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670e0d1ad51%3A0x9e2f6de01b3f7f3e!2sBengaluru%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sin!4v1630570476805!5m2!1sen!2sin" 
+              width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

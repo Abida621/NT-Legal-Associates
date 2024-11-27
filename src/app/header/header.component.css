@@ -1,0 +1,12 @@
+.active-link {
+    font-weight: bold;
+    color: red; 
+    border-bottom: 2px solid red; 
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  a {
+    text-decoration: none;
+  }
